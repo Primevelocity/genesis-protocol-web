@@ -1,0 +1,9 @@
+name = "genesis-protocol"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "."
+
+[[routes]]
+pattern = "genesisprotocol.org/*"
+custom_domain = true

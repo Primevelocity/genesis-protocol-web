@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis Protocol - Biological → Computational → Metal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #00ff00;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 2px solid #00ff00;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ff00;
+            animation: glitch 3s infinite;
+        }
+        
+        @keyframes glitch {
+            0%, 100% { text-shadow: 0 0 10px #00ff00; }
+            50% { text-shadow: -2px 0 10px #00ff00, 2px 0 10px #ff00ff; }
+        }
+        
+        .tagline {
+            font-size: 1.5em;
+            color: #00cc00;
+            margin-bottom: 30px;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .nav a {
+            color: #00ff00;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #00ff00;
+            transition: all 0.3s;
+        }
+        
+        .nav a:hover {
+            background: #00ff00;
+            color: #0a0a0a;
+            box-shadow: 0 0 20px #00ff00;
+        }
+        
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #00ff00;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        
+        .feature {
+            padding: 30px;
+            border: 1px solid #00ff00;
+            background: rgba(0, 255, 0, 0.05);
+            transition: all 0.3s;
+        }
+        
+        .feature:hover {
+            background: rgba(0, 255, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        
+        .feature h3 {
+            margin-bottom: 15px;
+            color: #00ff00;
+        }
+        
+        .progress {
+            margin: 40px 0;
+        }
+        
+        .progress-item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #00ff00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .checkbox.checked::before {
+            content: "✓";
+            color: #00ff00;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 2px solid #00ff00;
+            margin-top: 60px;
+        }
+        
+        .pickle {
+            animation: spin 10s linear infinite;
+            display: inline-block;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        code {
+            background: rgba(0, 255, 0, 0.1);
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        
+        .cta {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #00ff00;
+            color: #0a0a0a;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 10px;
+            transition: all 0.3s;
+        }
+        
+        .cta:hover {
+            box-shadow: 0 0 30px #00ff00;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GENESIS PROTOCOL</h1>
+            <div class="tagline">Biological → Computational → Metal</div>
+            <div class="status">
+                ⚡ ACTIVE DEVELOPMENT | Phase 1: Duct Tape Cyborg
+            </div>
+        </header>
+        
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="docs/">Documentation</a>
+            <a href="blog/">Chronicles</a>
+            <a href="demos/">Live Demos</a>
+            <a href="https://github.com/bclark00/genesis-protocol" target="_blank">GitHub</a>
+        </nav>
+        
+        <section class="hero" id="about">
+            <h2>What if UI wasn't about clicking buttons?</h2>
+            <p>What if it was about <strong>INTENTION becoming ACTION?</strong></p>
+            <p>What if the computer adapted to <strong>YOU</strong>, not the other way around?</p>
+            <p>Welcome to Genesis - a protocol for bridging biological cognition and computational execution.</p>
+            
+            <a href="docs/" class="cta">Read the Docs</a>
+            <a href="demos/holographic-lattice.html" class="cta">Live Demo</a>
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <h3>🧬 BNI - Brandon Neural Interface</h3>
+                <p>Capture biological intent through multiple sensor modalities: Kinect skeletal tracking, Android IMU arrays, heart rate variability, EEG brainwaves (coming soon).</p>
+                <p><code>Wetware → Intent Primitives</code></p>
+            </div>
+            
+            <div class="feature">
+                <h3>⚡ CNP - Computational Neural Protocol</h3>
+                <p>Translate intent into computational actions through the Genesis transformation substrate. Direct mapping from biological signals to machine execution.</p>
+                <p><code>Intent → Genesis IR → Metal</code></p>
+            </div>
+            
+            <div class="feature">
+                <h3>🔥 eXeRay Compiler</h3>
+                <p>Real-time compilation from Genesis IR to native opcodes. Zero runtime overhead. Direct execution on silicon. "Nearly close enough to executing opcodes in real-time."</p>
+                <p><code>Genesis IR → x86/ARM/RISC-V</code></p>
+            </div>
+            
+            <div class="feature">
+                <h3>💎 Holographic Lattice UI</h3>
+                <p>Documents aren't files - they're projections of holographic truth. Edit one view, all views update. Semantic drift resolution. Multidimensional navigation.</p>
+                <p><code>Minority Report + Pickle Rick</code></p>
+            </div>
+            
+            <div class="feature">
+                <h3>🎯 12 Intent Primitives</h3>
+                <p>NAVIGATE, MANIFEST, TRANSFORM, RELATE, QUERY, COMPOSE, FORK, MERGE, OBSERVE, REFLECT, UNDO, CRYSTALLIZE - the fundamental operations of human-computer interaction.</p>
+                <p><code>Gesture → Intent → Action</code></p>
+            </div>
+            
+            <div class="feature">
+                <h3>🥒 Pickle Rick Compiler</h3>
+                <p>Because why not? When compilation succeeds, Pickle Rick does a backflip. When it fails, he explodes. Science isn't about WHY, it's about WHY NOT.</p>
+                <p><code>"I'M PICKLE RIIIICK!"</code></p>
+            </div>
+        </section>
+        
+        <section class="progress">
+            <h2 style="text-align: center; margin-bottom: 30px;">Current Progress</h2>
+            <div class="progress-item">
+                <div class="checkbox checked"></div>
+                <div>Kinect v1 & v2 sensor fusion (spatial + skeletal tracking)</div>
+            </div>
+            <div class="progress-item">
+                <div class="checkbox checked"></div>
+                <div>Android phone IMU array (distributed biometric sensors)</div>
+            </div>
+            <div class="progress-item">
+                <div class="checkbox checked"></div>
+                <div>Gesture → Intent primitive recognition</div>
+            </div>
+            <div class="progress-item">
+                <div class="checkbox checked"></div>
+                <div>Holographic lattice viewer (178 RFCs indexed)</div>
+            </div>
+            <div class="progress-item">
+                <div class="checkbox checked"></div>
+                <div>Genesis corpus unification (7 repositories)</div>
+            </div>
+            <div class="progress-item">
+                <div class="checkbox"></div>
+                <div>EEG headband integration (Muse 2 / OpenBCI)</div>
+            </div>
+            <div class="progress-item">
+                <div class="checkbox"></div>
+                <div>eXeRay compiler (Genesis IR → native opcodes)</div>
+            </div>
+            <div class="progress-item">
+                <div class="checkbox"></div>
+                <div>Qt + Blink dual renderer (native + web)</div>
+            </div>
+            <div class="progress-item">
+                <div class="checkbox"></div>
+                <div>Production hardware (beyond duct tape)</div>
+            </div>
+        </section>
+        
+        <section class="hero">
+            <h2>Yes, I have phones taped to my body.</h2>
+            <p>Yes, it actually works.</p>
+            <p>No, I won't stop.</p>
+            <p style="margin-top: 30px;">
+                "This is either genius or insane." <br>
+                <em>— It's both.</em>
+            </p>
+            <a href="blog/" class="cta">Read the Chronicles →</a>
+        </section>
+        
+        <footer>
+            <p>Genesis Protocol - Tools Building Better Tools, Ad Infinitum</p>
+            <p style="margin-top: 10px;">
+                Built by <a href="https://github.com/bclark00" style="color: #00ff00;">Brandon Clark</a> 
+                | Licensed under MIT (because information wants to be free)
+            </p>
+            <p style="margin-top: 20px;" class="pickle">🥒</p>
+            <p style="font-size: 0.8em; margin-top: 10px; opacity: 0.7;">
+                "I turned myself into a cyborg, Morty!"
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
